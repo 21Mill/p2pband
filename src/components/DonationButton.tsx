@@ -8,8 +8,9 @@ import { useNostrEvents } from '../context/NostrEventsContext';
 
 const { Title, Paragraph } = Typography;
 
-const DEVELOPER_PUBKEY = '5b7e291df10b60da4d71ea99142a0f3e0eb83f20c2f122efe8ee633e7c90e2ab';
-const DEVELOPER_LN_ADDRESS = 'cobaltshrimp5@primal.net';
+const DEVELOPER_PUBKEY = 'a25fe024a10f7f2b5373f93852cbeba5758fa0f6946ef105d23de4aa994d4062';
+const DEVELOPER_LN_ADDRESS = 'solitaryregeneration836215@getalby.com';
+const DEVELOPER_NPUB = 'npub15f07qf9ppaljk5mnlyu99jlt546clg8kj3h0zpwj8hj24x2dgp3q76l8me';
 const MONTHLY_GOAL_SATS = 15000;
 
 // Preset zap amounts in satoshis
@@ -395,7 +396,7 @@ const InvoiceFormModal: React.FC<InvoiceFormModalProps> = ({ visible, onClose, o
     setLoading(true);
 
     try {
-      const lnAddress = 'cobaltshrimp5@primal.net';
+      const lnAddress = DEVELOPER_LN_ADDRESS;
       const [username, domain] = lnAddress.split('@');
 
       // Step 1: Fetch the LNURL endpoint from the Lightning Address
@@ -684,10 +685,7 @@ const DonationButton: React.FC = () => {
   };
 
   const handleZapDeveloper = () => {
-    window.open(
-      'https://njump.me/npub1tdlzj803pdsd5nt3a2v3g2s08c8ts0eqctcj9mlgae3nulysu24svv9s5n',
-      '_blank'
-    );
+    window.open(`https://njump.me/${DEVELOPER_NPUB}`, '_blank');
     setModalVisible(false);
   };
 

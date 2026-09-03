@@ -995,6 +995,15 @@ const NostrEventsTable: React.FC = () => {
             >
               KoalaSat
             </a>
+            {', maintained by'}
+            <a
+              href="https://njump.me/npub15f07qf9ppaljk5mnlyu99jlt546clg8kj3h0zpwj8hj24x2dgp3q76l8me"
+              target="_blank"
+              style={{ marginLeft: 4 }}
+              rel="noreferrer"
+            >
+              21M
+            </a>
           </small>
         </div>
       </div>
