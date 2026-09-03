@@ -4,6 +4,7 @@ import { ConfigProvider, theme } from 'antd';
 import { NostrEventsProvider } from './context/NostrEventsContext';
 import Header from 'components/Header';
 import NostrLogin from './components/NostrLogin';
+import MostroPromo from 'components/MostroPromo';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             <Header />
             <NostrLogin />
             <NostrEventsTable />
+            <MostroPromo />
           </div>
         </div>
       </NostrEventsProvider>

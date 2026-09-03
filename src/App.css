@@ -438,3 +438,183 @@ small a {
 small a:hover {
   text-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
 }
+
+/* Mostro promo block: native markup rather than a fixed-size image, so it stays
+   readable from 320px up. The original artwork lives behind the lightbox. */
+.mostro-promo {
+  margin: 30px 20px 0 20px;
+  padding: 20px;
+  border: 1px solid #3cf73c;
+  background-color: #0c0c0c;
+  box-shadow: 0 0 10px rgba(60, 247, 60, 0.15);
+}
+
+.mostro-promo__head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid rgba(60, 247, 60, 0.4);
+}
+
+.mostro-promo__head img {
+  width: 40px;
+  height: 40px;
+}
+
+.mostro-promo__head h2 {
+  margin: 0;
+  color: #41f4f4;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 6px rgba(65, 244, 244, 0.4);
+}
+
+.mostro-promo__head p {
+  margin: 2px 0 0 0;
+  color: #3cf73c;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mostro-promo__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+}
+
+.mostro-promo__card {
+  border: 1px solid rgba(60, 247, 60, 0.5);
+  background: linear-gradient(160deg, #0e0e0e, #090909);
+  padding: 16px 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mostro-promo__card:hover {
+  border-color: #41f4f4;
+  box-shadow: 0 0 12px rgba(65, 244, 244, 0.25);
+}
+
+.mostro-promo__icon {
+  font-size: 26px;
+  color: #41f4f4;
+  text-shadow: 0 0 8px rgba(65, 244, 244, 0.5);
+}
+
+.mostro-promo__card h3 {
+  margin: 10px 0 6px 0;
+  color: #3cf73c;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mostro-promo__card p {
+  margin: 0;
+  color: #9ad79a;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.mostro-promo__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.mostro-promo__cta a,
+.mostro-promo__cta button {
+  padding: 8px 14px;
+  border: 1px solid #3cf73c;
+  color: #3cf73c !important;
+  background-color: #090909;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mostro-promo__cta a:first-child {
+  border-color: #41f4f4;
+  color: #41f4f4 !important;
+  background-color: rgba(65, 244, 244, 0.08);
+}
+
+.mostro-promo__cta a:hover,
+.mostro-promo__cta button:hover {
+  border-color: #41f4f4 !important;
+  color: #41f4f4 !important;
+  box-shadow: 0 0 10px rgba(65, 244, 244, 0.3);
+}
+
+@media (max-width: 576px) {
+  .mostro-promo {
+    margin: 20px 10px 0 10px;
+    padding: 14px;
+  }
+
+  .mostro-promo__cta a,
+  .mostro-promo__cta button {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+
+.mostro-promo__communities {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(60, 247, 60, 0.4);
+}
+
+.mostro-promo__communities h3 {
+  margin: 0 0 12px 0;
+  color: #41f4f4;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.mostro-promo__communities ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 8px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mostro-promo__communities li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: 1px solid rgba(60, 247, 60, 0.25);
+}
+
+.mostro-promo__communities li img {
+  width: 20px;
+  height: 20px;
+}
+
+.mostro-promo__region {
+  flex: 1 1 auto;
+  color: #3cf73c;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.mostro-promo__communities a {
+  color: #41f4f4 !important;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.mostro-promo__communities a:hover {
+  text-shadow: 0 0 8px rgba(65, 244, 244, 0.6);
+}
