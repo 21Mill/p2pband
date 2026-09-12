@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-P2P Bitcoin exchanges decentralized aggregator (https://p2p.band). A Create React App + TypeScript frontend that subscribes to Nostr relays and renders a unified order book of Bitcoin P2P offers from multiple platforms (Mostro, Robosats, LNP2PBot, Peach, HodlHodl).
+P2P Bitcoin exchanges decentralized aggregator (https://p2p.band). A Create React App + TypeScript frontend that subscribes to Nostr relays and renders a unified order book of Bitcoin P2P offers from multiple platforms (Mostro, Robosats, Peach, HodlHodl).
 
 ## Commands
 
