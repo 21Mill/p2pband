@@ -102,6 +102,16 @@ export const MOSTRO_INSTANCES: MostroInstance[] = [
     links: [{ type: 'telegram', url: 'https://t.me/+GyVD_uH9-Gw0OGRh' }],
   },
   {
+    pubkey: '00003f6be51b51a1a0cf9c94232ab1bba1f5c1bfd5a0e8687e9647558536b791',
+    name: 'MostroMexico',
+    flag: '🇲🇽',
+    region: 'México',
+    authRelays: ['wss://relay.mostro.network'],
+    // mostro.community does not list Mexico. Its kind 0 publishes this Telegram in the
+    // `website` field, but it is a Telegram: typed by what it is, not by where it came from.
+    links: [{ type: 'telegram', url: 'https://t.me/MostroMexico' }],
+  },
+  {
     pubkey: 'b3626fe91b602bdbca3673bec0855221f41dc8f6d0e4027e51eaa525d68d87f2',
     name: 'MostroAr',
     flag: '🇦🇷',
